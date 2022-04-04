@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/shared_resource_fragment">
+
+    <fragment
+        android:id="@+id/shared_resource_fragment"
+        android:name="it.sapienza.macc.sharet.sharedresource.SharedResourceFragment"
+        android:label="fragment_shared_resource"
+        tools:layout="@layout/fragment_shared_resource" >
+        <action
+            android:id="@+id/action_sharedResourceFragment_to_customDialogFragment"
+            app:destination="@id/custom_dialog" />
+        <action
+            android:id="@+id/action_shared_resource_fragment_to_sharedResourceCalendarFragment"
+            app:destination="@id/sharedResourceCalendarFragment" />
+        <action
+            android:id="@+id/action_shared_resource_fragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/shared_resource_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/custom_dialog"
+        android:name="it.sapienza.macc.sharet.customdialogresource.CustomDialogResourceFragment"
+        android:label="CustomDialog" >
+        <action
+            android:id="@+id/action_customDialog_to_sharedResourceFragment"
+            app:destination="@id/shared_resource_fragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/shared_resource_fragment"
+            app:popUpToInclusive="true" />
+    </dialog>
+    <fragment
+        android:id="@+id/sharedResourceCalendarFragment"
+        android:name="it.sapienza.macc.sharet.sharedresourcecalendar.SharedResourceCalendarFragment"
+        android:label="SharedResourceCalendarFragment" >
+        <action
+            android:id="@+id/action_sharedResourceCalendarFragment_to_shared_resource_fragment"
+            app:destination="@id/shared_resource_fragment" />
+        <action
+            android:id="@+id/action_sharedResourceCalendarFragment_to_customDialogCalendarFragment"
+            app:destination="@id/customDialogCalendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="it.sapienza.macc.sharet.auth.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_shared_resource_fragment"
+            app:destination="@id/shared_resource_fragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/customDialogCalendarFragment"
+        android:name="it.sapienza.macc.sharet.customdialogcalendar.CustomDialogCalendarFragment"
+        android:label="CustomDialogCalendarFragment" >
+        <action
+            android:id="@+id/action_customDialogCalendarFragment_to_sharedResourceCalendarFragment"
+            app:destination="@id/sharedResourceCalendarFragment"
+            app:popUpTo="@id/sharedResourceCalendarFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

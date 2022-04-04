@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ShareT</string>
+    <string name="hint_add_button_text">ADD A SHARED RESOURCE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_shared_resource_text">Add your shared resource</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="profile">Profile</string>
+    <string name="create_resource">Create your shared resource</string>
+    <string name="name">Name</string>
+    <string name="create">Create</string>
+    <string name="shared_resource_results">Shared Resource List</string>
+    <string name="close">Close</string>
+    <string name="clear_text">Clear</string>
+    <string name="save">Save</string>
+    <string name="calendar_input_dialog_title">Enter event title</string>
+    <string name="calendar_empty_input_text">Text is empty</string>
+    <string name="calendar_dialog_delete_confirmation">Delete this event?</string>
+    <string name="delete">Delete</string>
+    <string name="calendar_title">Shared Resource Calendar</string>
+    <string name="event_name">Enter reservation name</string>
+    <string name="reservation_title">Create your reservation</string>
+    <string name="fill_fields">Please, fill in all fields.</string>
+
+
+    <string name="login_btn">Login</string>
+    <string name="login_prompt">Login to access ShareT app!</string>
+    <string name="login_button_text">Login</string>
+    <string name="logout_button_text">Logout</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="time_not_defined">_________</string>
+    <string name="time_hint">00:00</string>
+</resources>
